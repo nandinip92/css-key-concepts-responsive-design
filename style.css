@@ -4,11 +4,13 @@
   --light: #e7ecef;
   --dark: #272932;
   --camel: #d8a47f;
+  --liliac: #d7bde2;
+  --pista: #d1f2eb;
 }
 
 body {
   background-color: var(--light);
-  border: 0.5em solid var(--camel);
+  /*border: 0.5rem solid var(--camel);*/
 }
 
 .card-container {
@@ -18,11 +20,40 @@ body {
 }
 
 .card {
-  padding: 10px;
-  margin: 10px;
-  border: 0.5em solid var(--dark);
+  padding: 0.625rem; /*10px*/
+  margin: 0.625rem;
+  /*border: 0.5rem solid var(--dark);*/
 }
 
 img {
-  width: 250px;
+  width: 15.625rem; /*250px*/
+}
+
+.h1 {
+  font-size: 2.25rem;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    font-size: 1.5rem;
+    /*background-color: var(--liliac);*/
+  }
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    font-size: 2rem;
+    /*background-color: var(--pista);*/
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark);
+    color: #e7ecef;
+  }
+}
+@media (prefer-color-scheme: light) {
+  body {
+    background-color: var(--light);
+  }
 }
