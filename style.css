@@ -41,7 +41,7 @@ img {
 }
 @media only screen and (min-width: 1000px) {
   body {
-    font-size: 2rem;
+    font-size: 1.8rem;
     /*background-color: var(--pista);*/
   }
 }
@@ -49,11 +49,13 @@ img {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--dark);
+    font-family: "Bitter", serif;
     color: #e7ecef;
   }
 }
 @media (prefer-color-scheme: light) {
   body {
     background-color: var(--light);
+    font-family: "Bitter", serif;
   }
 }
